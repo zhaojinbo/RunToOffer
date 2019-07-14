@@ -1,4 +1,7 @@
 public class S17_Print1ToMaxOfNBitDigit {
+    /**
+     * 通过模拟字符串加法实现的一种方法
+     */
     private static void print1ToMaxOfNBitDigit(int n) {
         char[] chars = new char[n];
         for (int i = 0; i < n; i++) {
@@ -15,7 +18,7 @@ public class S17_Print1ToMaxOfNBitDigit {
     private static void printNum(char[] chars, int length) {
         int index = 0;
         for (int i = 0; i < length; i++) {
-            if (chars[i]!='0'){
+            if (chars[i] != '0') {
                 index = i;
                 break;
             }
@@ -53,7 +56,7 @@ public class S17_Print1ToMaxOfNBitDigit {
         return shouldStop;
     }
 
-    public static void main(String[] args) {
+/*    public static void main(String[] args) {
         print1ToMaxOfNBitDigit(3);
-    }
+    }*/
 }
